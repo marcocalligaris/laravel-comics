@@ -7,27 +7,6 @@
     <title>DC Comics | {{ $title }}</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <figure>
-                <a href="#"><img src="{{ asset('images/dc-logo.png') }}" alt="DC Comics logo"></a>
-            </figure>
-            <nav>
-                <ul>
-                    <li><a href="{{ url('/') }}"></a>Home</li>
-                    <li><a href="{{ route('characters') }}"></a>Characters</li>
-                    <li><a href="{{ route('comics') }}"></a>Comics</li>
-                    <li><a href="{{ route('movies') }}"></a>Movies</li>
-                    <li><a href="{{ route('tv') }}"></a>Tv</li>
-                    <li><a href="{{ route('games') }}"></a>Games</li>
-                    <li><a href="{{ route('collectibles') }}"></a>Collectibles</li>
-                    <li><a href="{{ route('videos') }}"></a>Videos</li>
-                    <li><a href="{{ route('fans') }}"></a>Fans</li>
-                    <li><a href="{{ route('news') }}"></a>News</li>
-                    <li><a href="{{ route('shop') }}"></a>Shop</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    @include('includes.header')
 </body>
 </html>

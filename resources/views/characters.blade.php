@@ -7,6 +7,6 @@
     <title>DC Comics | {{ $title }}</title>
 </head>
 <body>
-    
+    @include('includes.header')
 </body>
 </html>
