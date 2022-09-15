@@ -14,36 +14,47 @@ use Illuminate\Support\Facades\Route;
 */
 // Home page
 Route::get('/', function () {
-    return view('home');
+    $title = "Home";
+    return view('home', compact('title'));
 });
 
 Route::get('/characters', function () {
-    return view('characters');
+    $title = "Characters";
+    return view('characters', compact('title'));
 });
 Route::get('/comics', function () {
-    return view('comics');
+        $title = "Comics";
+    return view('comics', compact('title'));
 });
 Route::get('/movies', function () {
-    return view('movies');
+        $title = "Movies";
+    return view('movies', compact('title'));
 });
 Route::get('/tv', function () {
-    return view('tv');
+        $title = "Tv";
+    return view('tv', compact('title'));
 });
 Route::get('/games', function () {
-    return view('games');
+        $title = "Games";
+    return view('games', compact('title'));
 });
 Route::get('/collectibles', function () {
-    return view('collectibles');
+        $title = "Collectibles";
+    return view('collectibles', compact('title'));
 });
 Route::get('/videos', function () {
-    return view('videos');
+        $title = "Videos";
+    return view('videos', compact('title'));
 });
 Route::get('/fans', function () {
-    return view('fans');
+        $title = "Fans";
+    return view('fans', compact('title'));
 });
 Route::get('/news', function () {
-    return view('news');
+        $title = "News";
+    return view('news', compact('title'));
 });
 Route::get('/shop', function () {
-    return view('shop');
+        $title = "Shop";
+    return view('shop', compact('title'));
 });
