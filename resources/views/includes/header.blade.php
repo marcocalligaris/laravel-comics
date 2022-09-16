@@ -5,17 +5,17 @@
             </figure>
             <nav>
                 <ul>
-                    <li><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="{{ route('characters') }}">Characters</a></li>
-                    <li><a href="{{ route('comics') }}">Comics</a></li>
-                    <li><a href="{{ route('movies') }}">Movies</a></li>
-                    <li><a href="{{ route('tv') }}">Tv</a></li>
-                    <li><a href="{{ route('games') }}">Games</a></li>
-                    <li><a href="{{ route('collectibles') }}">Collectibles</a></li>
-                    <li><a href="{{ route('videos') }}">Videos</a></li>
-                    <li><a href="{{ route('fans') }}">Fans</a></li>
-                    <li><a href="{{ route('news') }}">News</a></li>
-                    <li><a href="{{ route('shop') }}">Shop</a></li>
+                    <li><a href="{{ route('home') }}">HOME</a></li>
+                    <li><a href="{{ route('characters') }}">CHARACTERS</a></li>
+                    <li><a href="{{ route('comics') }}">COMICS</a></li>
+                    <li><a href="{{ route('movies') }}">MOVIES</a></li>
+                    <li><a href="{{ route('tv') }}">TV</a></li>
+                    <li><a href="{{ route('games') }}">GAMES</a></li>
+                    <li><a href="{{ route('collectibles') }}">COLLECTIBLES</a></li>
+                    <li><a href="{{ route('videos') }}">VIDEOS</a></li>
+                    <li><a href="{{ route('fans') }}">FANS</a></li>
+                    <li><a href="{{ route('news') }}">NEWS</a></li>
+                    <li><a href="{{ route('shop') }}">SHOP</a></li>
                 </ul>
             </nav>
         </div>
