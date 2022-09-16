@@ -1,0 +1,32 @@
+header {
+    background-color: #fff;
+    height: 100px;
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    figure img {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        li {
+            line-height: 100px;
+            margin-left: 30px;
+        }
+        li:hover {
+            box-shadow: 0px -4px 0px #0282F9 inset;
+        }
+        a {
+            font-size: 12px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a.active,
+        a:hover {
+            color: #0282F9;
+        }
+    }
+}
