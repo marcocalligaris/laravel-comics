@@ -1,3 +1,7 @@
+@php 
+$pages = config('main_menu');
+@endphp
+
 <header>
     <div class="container">
         <figure>
@@ -5,17 +9,8 @@
         </figure>
         <nav>
             <ul>
-                <li><a href="{{ route('home') }}">HOME</a></li>
-                <li><a href="{{ route('characters') }}">CHARACTERS</a></li>
-                <li><a href="{{ route('comics') }}">COMICS</a></li>
-                <li><a href="{{ route('movies') }}">MOVIES</a></li>
-                <li><a href="{{ route('tv') }}">TV</a></li>
-                <li><a href="{{ route('games') }}">GAMES</a></li>
-                <li><a href="{{ route('collectibles') }}">COLLECTIBLES</a></li>
-                <li><a href="{{ route('videos') }}">VIDEOS</a></li>
-                <li><a href="{{ route('fans') }}">FANS</a></li>
-                <li><a href="{{ route('news') }}">NEWS</a></li>
-                <li><a href="{{ route('shop') }}">SHOP</a></li>
+                @foreach($pages as $page)
+                <li><a href="{{ route($link['route_name']) }}" class="active">{{ $link['text'] }}</a></li>
             </ul>
         </nav>
     </div>
