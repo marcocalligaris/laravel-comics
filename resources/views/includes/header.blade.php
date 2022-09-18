@@ -1,4 +1,4 @@
-@php 
+@php  
 $pages = config('main_menu');
 @endphp
 
@@ -10,7 +10,12 @@ $pages = config('main_menu');
         <nav>
             <ul>
                 @foreach($pages as $page)
-                <li><a href="{{ route($link['route_name']) }}" class="active">{{ $link['text'] }}</a></li>
+                <li>
+                    <a href=""></a>
+                    <a href="{{ route($page['route_name']) }}" 
+                    class="{{ request()->routeIs($page['route_name']) ? 'active' : '' }}">{{ $page['text'] }}</a>
+                </li>
+                @endforeach
             </ul>
         </nav>
     </div>
