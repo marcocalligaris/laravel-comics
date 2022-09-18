@@ -141,3 +141,72 @@ footer ul {
 .footer-bottom #social-media ul li {
   margin-left: 20px;
 }
+
+#jumbotron {
+  background-image: url(../images/jumbotron.jpg);
+  background-size: cover;
+  height: 400px;
+}
+
+#current-series {
+  position: relative;
+  padding-bottom: 30px;
+}
+#current-series #series-header h3 {
+  display: inline-block;
+  padding: 8px 15px;
+  color: white;
+  background-color: #0282F9;
+  position: absolute;
+  transform: translateY(-50%);
+}
+#current-series #series-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+#current-series #series-gallery .media-card {
+  width: 16.6666666667%;
+  padding: 15px;
+}
+#current-series #series-gallery .media-card img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-bottom: 20px;
+}
+#current-series #series-gallery .media-card p {
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#current-series .btn {
+  display: flex;
+  justify-content: center;
+}
+#current-series .btn #load-btn {
+  color: white;
+  font-weight: bold;
+  padding: 12px 60px;
+  background-color: #0282F9;
+}
+
+#banner {
+  background-color: #0282F9;
+  position: relative;
+}
+#banner #banner-gallery {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#banner #banner-gallery .banner-card a {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+#banner #banner-gallery .banner-card a img {
+  margin-right: 10px;
+}
